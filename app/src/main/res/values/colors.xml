@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="defColorPrimary">#6200EE</color>
+    <color name="defColorPrimaryDark">#3700B3</color>
+    <color name="defColorAccent">#03DAC5</color>
+    <!-- 系統預設標題-->
+    <color name="colorPrimary">#03DAC5</color>
+    <color name="colorPrimarySelect">#3303DAC5</color>
+    <color name="colorPrimaryDark">#00a895</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!-- 可選預設分類-->
+    <color name="colorThemePink">#faccd0</color>
+    <color name="colorThemePinkSelect">#4dfaccd0</color>
+    <color name="colorThemePinkDark">#c79b9f</color>
+    <!-- 簡易主題-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPinkThemeUndone">#4dFF8B91</color>
+    <color name="colorPinkThemeDone">#4d33DD93</color>
+    <color name="colorPinkThemeBlue">#4d558DFC</color>
+    <!-- 可選顏色-->
+    <color name="colorTodoRed">#66FF8B91</color>
+    <color name="colorTodoOrange">#66ffd6aa</color>
+    <color name="colorTodoYellow">#66fef5d4</color>
+    <color name="colorTodoGreen">#66c3e2dd</color>
+    <color name="colorTodoBlue">#66558DFC</color>
+    <color name="colorTodoIndigo">#66bfc8d7</color>
+    <color name="colorTodoPurple">#66efbad6</color>
+    <color name="colorTodoPurple2">#66e098ae</color>
+    <color name="colorTodoPlus">#66fce9da</color>
+    <color name="colorTodoPlus2">#66ffcec7</color>
+    <color name="colorTodoWhite">#66ffffff</color>
+    <color name="colorTodoBlack">#66000000</color>
+
+    <!-- oldRed eeb8b8 -->
+    <color name="colorThemeRed">#FF8B91</color>
+    <color name="colorThemeOrange">#ffd6aa</color>
+    <color name="colorThemeYellow">#fef5d4</color>
+    <color name="colorThemeGreen">#c3e2dd</color>
+    <color name="colorThemeBlue">#558DFC</color>
+    <color name="colorThemeIndigo">#bfc8d7</color>
+    <color name="colorThemePurple">#efbad6</color>
+    <color name="colorThemePurple2">#e098ae</color>
+    <color name="colorThemePlus">#fce9da</color>
+    <color name="colorThemePlus2">#ffcec7</color>
+    <color name="colorThemeWhite">#ffffff</color>
+    <color name="colorThemeBlack">#000000</color>
+
+    <color name="colorThemeRedSelect">#b3FF8B91</color>
+    <color name="colorThemeOrangeSelect">#b3ffd6aa</color>
+    <color name="colorThemeYellowSelect">#b3fef5d4</color>
+    <color name="colorThemeGreenSelect">#b3c3e2dd</color>
+    <color name="colorThemeBlueSelect">#b3558DFC</color>
+    <color name="colorThemeIndigoSelect">#b3bfc8d7</color>
+    <color name="colorThemePurpleSelect">#b3efbad6</color>
+    <color name="colorThemePurple2Select">#b3e098ae</color>
+    <color name="colorThemePlusSelect">#b3fce9da</color>
+    <color name="colorThemePlus2Select">#b3ffcec7</color>
+    <color name="colorThemeWhiteSelect">#b3ffffff</color>
+    <color name="colorThemeBlackSelect">#b3000000</color>
+
+
+</resources>
+
+<!--
+0%	    00
+5%	    0D
+10%	    1A
+15%	    26
+20%	    33
+25%	    40
+30%	    4D
+35%	    59
+40%	    66
+45%	    73
+50%	    80
+55%	    8C
+60%	    99
+65%	    A6
+70%	    B3
+75%	    BF
+80%	    CC
+85%	    D9
+90%	    E6
+95%	    F2
+100%    FF
+-->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:translationZ="3dp"
+        android:layout_margin="@dimen/todoItemCorrect"
+        app:cardCornerRadius="10dp"
+        android:stateListAnimator="@anim/item_touch_animator">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mInLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mImageCheck"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mCheckLeft"
+                app:layout_constraintStart_toStartOf="@+id/mCheckLeft"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_done_black_48dp" />
+
+            <TextView
+                android:id="@+id/mTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:text=""
+                android:textSize="@dimen/todoItemSize"
+                android:elegantTextHeight="true"
+                app:layout_constraintBottom_toTopOf="@+id/mBaseLine1"
+                app:layout_constraintEnd_toStartOf="@+id/mCheckRight"
+                app:layout_constraintStart_toEndOf="@+id/mCheckLeft"
+                app:layout_constraintTop_toTopOf="@+id/mBaseLine1"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mBaseLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <CheckBox
+                android:id="@+id/mCheckLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/mCheckRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/mBaseLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <View
+                android:id="@+id/mTopBackground"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/mBaseLine2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--        <View-->
+            <!--            android:id="@+id/view"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="0.8dp"-->
+            <!--            android:layout_marginStart="16dp"-->
+            <!--            android:background="#801e1e1e"-->
+            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/mTextView"-->
+            <!--            app:layout_constraintVertical_bias="1.0" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

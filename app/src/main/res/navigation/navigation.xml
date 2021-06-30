@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragMain">
+    <fragment
+        android:id="@+id/fragSetting"
+        android:name="com.endrollmodel.notesample.view.FragSetting"
+        android:label="fragment_frag_setting"
+        tools:layout="@layout/frag_setting" />
+    <fragment
+        android:id="@+id/todoInfo"
+        android:name="com.endrollmodel.notesample.view.FragTodoInfo"
+        android:label="FragOneInfo" />
+    <fragment
+        android:id="@+id/fragMain"
+        android:name="com.endrollmodel.notesample.view.FragMain"
+        android:label="FragMain" >
+        <action
+            android:id="@+id/action_fragMain_to_todoInfo"
+            app:destination="@id/todoInfo"
+            app:popExitAnim="@anim/toolbar_change_popexit_v3" />
+        <action
+            android:id="@+id/action_fragMain_to_fragSetting"
+            app:destination="@id/fragSetting"
+            app:enterAnim="@anim/toolbar_change_item"
+            app:popEnterAnim="@anim/toolbar_change_popenter_v2"
+            app:popExitAnim="@anim/toolbar_change_popexit_v2" />
+        <action
+            android:id="@+id/action_fragMain_to_fragInfo"
+            app:destination="@id/fragInfo"
+            app:enterAnim="@anim/toolbar_change_item"
+            app:popEnterAnim="@anim/toolbar_change_popenter_v2"
+            app:popExitAnim="@anim/toolbar_change_popexit_v2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragTodoMainV2"
+        android:name="com.endrollmodel.notesample.view.FragTodoMainV2"
+        android:label="frag_todo_main_v2"
+        tools:layout="@layout/frag_todo_main_v2" >
+        <action
+            android:id="@+id/action_fragTodoMainV2_to_todoInfo"
+            app:destination="@id/todoInfo"
+            app:enterAnim="@anim/toolbar_change_item"
+            app:popEnterAnim="@anim/toolbar_change_popenter"
+            app:popExitAnim="@anim/toolbar_change_popexit"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_fragTodoMainV2_to_fragSetting"
+            app:destination="@id/fragSetting"
+            app:enterAnim="@anim/toolbar_change_item"
+            app:popEnterAnim="@anim/toolbar_change_popenter"
+            app:popExitAnim="@anim/toolbar_change_popexit" />
+        <action
+            android:id="@+id/action_fragTodoMainV2_to_fragInfo"
+            app:destination="@id/fragInfo"
+            app:enterAnim="@anim/toolbar_change_item"
+            app:popEnterAnim="@anim/toolbar_change_popenter"
+            app:popExitAnim="@anim/toolbar_change_popexit"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragInfo"
+        android:name="com.endrollmodel.notesample.view.FragInfo"
+        android:label="frag_info"
+        tools:layout="@layout/frag_info" />
+    <fragment
+        android:id="@+id/fragPageTest"
+        android:name="com.endrollmodel.notesample.testClass.FragPageTest"
+        android:label="FragPageTest" >
+        <action
+            android:id="@+id/action_fragPageTest_to_todoInfo"
+            app:destination="@id/todoInfo" />
+    </fragment>
+</navigation>
